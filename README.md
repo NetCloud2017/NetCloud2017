@@ -3,17 +3,30 @@
 <!-- </div> -->
 <!-- ![Metrics]() -->
 <style>
-.header {
+.header, .stats {
     display: flex;
+}
+
+.header {
     justify-content: space-between;
 }
+.stats {
+    flex-direction: column;
+}
+.stats > div {
+    flex-basis: 1;
+    flex-shrink: 0;
+}
 </style>
+
 <header class="header">
-    <img src="./github-metrics.svg" />
-    <div align="center">
-        <img src="https://github-stats-extended.vercel.app/api?username=NetCloud2017&rank_icon=percentile&custom_title=My%20Github%20Stats&show_icons=true&include_all_commits=true&theme=vue-dark" /> 
-    </div>
-    <div align='center'>
-        <img src="https://github-stats-extended.vercel.app/api/top-langs?username=NetCloud2017&layout=compact&langs_count=8&theme=vue" />
+    <img  src="./github-metrics.svg" />
+    <div class="stats">
+        <div align="center">
+            <img src="https://github-stats-extended.vercel.app/api?username=NetCloud2017&rank_icon=percentile&custom_title=My%20Github%20Stats&show_icons=true&include_all_commits=true&theme=vue-dark" /> 
+        </div>
+        <div align='center'>
+            <img src="https://github-stats-extended.vercel.app/api/top-langs?username=NetCloud2017&layout=compact&langs_count=8&theme=vue" />
+        </div>
     </div>
 </header>
